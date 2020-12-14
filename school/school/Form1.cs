@@ -24,20 +24,30 @@ namespace school
             EtteremXML();
         }
 
-        public void EtteremXML() 
+        public void EtteremXML()
         {
             var restaurants = new XmlDocument();
-            restaurants.Load("restaurants.xml");
+            restaurants.Load(@"restaurants.xml");
+            //Console.WriteLine(restaurants.DocumentElement.OuterXml);
 
-            foreach (XmlDocument element in restaurants.DocumentElement)
+
+            /*foreach (XmlDocument element in restaurants.DocumentElement)
             {
                 var rate = new EtteremekData();
                 Rates.Add(rate);
                 //Name
-               var childElement = element.ChildNodes[0];
-                rate.Name = childElement.GetAttribute();
+                //XmlElement nameElement = (XmlElement)Rates;
                 //rate.Name = element.get
-            }
+            }*/
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 f = new Form2();
+            f.ShowDialog();
+            this.Close();
         }
     }
 }
+
