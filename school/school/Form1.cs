@@ -21,10 +21,10 @@ namespace school
 
             pictureBox1.Width = pictureBox1.Image.Width;
 
-            etteremXML();
+            EtteremXML();
         }
 
-        public void etteremXML() 
+        public void EtteremXML() 
         {
             var restaurants = new XmlDocument();
             restaurants.Load("restaurants.xml");
@@ -34,7 +34,9 @@ namespace school
                 var rate = new EtteremekData();
                 Rates.Add(rate);
                 //Name
-
+               var childElement = element.ChildNodes[0];
+                rate.Name = childElement.GetAttribute();
+                //rate.Name = element.get
             }
         }
     }

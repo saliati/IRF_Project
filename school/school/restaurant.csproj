@@ -85,7 +85,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="restaurants.xml" />
+    <Content Include="restaurants.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\Restaurant-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
