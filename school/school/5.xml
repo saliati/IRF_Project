@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lunch>
+  <menu name="A">
+    <leves>Tejfölös burgonyaleves</leves>
+    <foetel>Paprikás krumpli, sült csirkemell</foetel>
+    <desszert>Sajttorta</desszert>
+    <ar>1500</ar>
+    <kaloria>1200</kaloria>
+  </menu>
+  <menu name="B">
+    <leves>Húsleves főtt hússal</leves>
+    <foetel>Fűszeres sült csirkecomb, párolt rizs, saláta</foetel>
+    <desszert>Hortobágyi óriáspalacsinta</desszert>
+    <ar>1400</ar>
+    <kaloria>1400</kaloria>
+  </menu>
+ </lunch>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lunch>
+  <menu name="A">
+    <leves>Csontleves tésztával </leves>
+    <foetel>Kelkáposzta főzelék, virslivel</foetel>
+    <desszert>nincs</desszert>
+    <ar>1400</ar>
+    <kaloria>1500</kaloria>
+  </menu>
+  <menu name="B">
+    <leves>Bakonyi betyárleves</leves>
+    <foetel>Sült csirkemell tejszínes almamártással, párolt rizs</foetel>
+    <desszert>Hortobágyi óriáspalacsinta</desszert>
+    <ar>1800</ar>
+    <kaloria>2300</kaloria>
+  </menu>
+ </lunch>

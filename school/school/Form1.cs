@@ -13,18 +13,23 @@ namespace school
 {
     public partial class Form1 : Form
     {
-        BindingList<EtteremekData> Rates = new BindingList<EtteremekData>();
 
         public Form1()
         {
             InitializeComponent();
 
             pictureBox1.Width = pictureBox1.Image.Width;
-
+            List<Etterem> e = getAllEtterem("restaurants.xml");
             EtteremXML();
         }
 
-        public void EtteremXML()
+        private List<Etterem> getMenu(string id)
+        {
+            List<Etterem> e = new List<Etterem>();
+            XmlReader reader = XmlReader.Create(id + ".xml");
+        }
+
+            public void EtteremXML()
         {
             var restaurants = new XmlDocument();
             restaurants.Load(@"restaurants.xml");

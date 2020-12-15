@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lunch>
+  <menu name="A">
+    <leves>Újházi tyúkhúsleves</leves>
+    <foetel>brokkolis csirkemell hasábbal</foetel>
+    <desszert>Sajttorta</desszert>
+    <ar>1600</ar>
+    <kaloria>1700</kaloria>
+  </menu>
+  <menu name="B">
+    <leves>Húsleves gazdagon</leves>
+    <foetel>Borzas csirkemell újburgonyával</foetel>
+    <desszert>Bejgli</desszert>
+    <ar>1500</ar>
+    <kaloria>2300</kaloria>
+  </menu>
+ </lunch>

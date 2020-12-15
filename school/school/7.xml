@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lunch>
+  <menu name="A">
+    <leves>Májgombócleves</leves>
+    <foetel>Velőpörkölt, főtt burgonya, saláta</foetel>
+    <desszert>Sajttorta</desszert>
+    <ar>1400</ar>
+    <kaloria>1200</kaloria>
+  </menu>
+  <menu name="B">
+    <leves>Májgombócleves</leves>
+    <foetel>Brassói sertéstokány, főtt burgonya, saláta</foetel>
+    <desszert>Hortobágyi óriáspalacsinta</desszert>
+    <ar>1600</ar>
+    <kaloria>1800</kaloria>
+  </menu>
+ </lunch>
