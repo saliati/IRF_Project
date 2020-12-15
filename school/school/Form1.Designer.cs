@@ -39,11 +39,11 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(263, 60);
+            this.label1.Location = new System.Drawing.Point(441, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(386, 41);
+            this.label1.Size = new System.Drawing.Size(320, 41);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Étteremek a közelben";
+            this.label1.Text = "Heti menü kínálat";
             // 
             // pictureBox1
             // 

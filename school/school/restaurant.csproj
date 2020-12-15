@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Countries.cs" />
-    <Compile Include="Entities\EtteremekData.cs" />
+    <Compile Include="Entities\Etterem.cs" />
     <Compile Include="Entities\Feedback.cs" />
     <Compile Include="Entities\Stars.cs" />
     <Compile Include="Form1.cs">
