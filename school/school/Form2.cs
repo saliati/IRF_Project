@@ -28,24 +28,8 @@ namespace school
         public void Cases() 
         {
             var cases = new XmlDocument();
-            try { cases.Load("Covid19_4.xml"); }
-            catch (System.IO.FileNotFoundException)
-            {
-                cases.LoadXml("<?xml version=\"1.0\"?> \n" +
-
-                "< Name > United States of America </ Name > \n" +
-                "< WHO Region > Americas </ WHO Region > \n" +
-                "< Cases - cumulative total > 15648098 </ Cases - cumulative total > \n" +
-                "< Cases - cumulative total per 1 million population > 47274.84 </ Cases - cumulative total per 1 million population > \n" +
-                "< Cases - newly reported in last 7 days > 1456800 </ Cases - newly reported in last 7 days > \n" +
-                "< Cases - newly reported in last 24 hours > 243209 </ Cases - newly reported in last 24 hours > \n" +
-                "< Deaths - cumulative total > 293129 </ Deaths - cumulative total > \n" +
-                "< Deaths - cumulative total per 1 million population > 885.58 </ Deaths - cumulative total per 1 million population > \n" +
-                "< Deaths - newly reported in last 7 days > 16626 </ Deaths - newly reported in last 7 days > \n" +
-                "< Deaths - newly reported in last 24 hours > 2996 </ Deaths - newly reported in last 24 hours > \n" +
-                "< Transmission Classification > Community transmission </ Transmission Classification >");
-            }
-
+            cases.Load("Covid19_4.xml");
+            
             foreach  (XmlElement element in cases.DocumentElement)
             {
                 var country = new Entities.Countries();

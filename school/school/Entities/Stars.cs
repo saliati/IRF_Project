@@ -8,6 +8,7 @@ namespace school.Entities
 {
     public enum Stars
     {
+        zero,
         one,
         two,
         three,
