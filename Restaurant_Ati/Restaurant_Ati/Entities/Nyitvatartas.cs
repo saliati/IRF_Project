@@ -8,27 +8,28 @@ namespace Restaurant_Ati
 {
     class Nyitvatartas
     {
-        private Dictionary<string, string> NyitvaT;
+        private Dictionary<string, string> NyitvaT; 
         public Nyitvatartas(string nyitvatartas)
         {
+            //seged dictionary
             Dictionary<string, string> seged = new Dictionary<string, string>();
             string[] napok = { "Hetfo", "Kedd", "Szerda", "Csutortok", "Pentek", "Szombat", "Vasarnap" };
-            string[] s = nyitvatartas.Split(';');
+            string[] s = nyitvatartas.Split(';'); 
 
-            for (int i = 0; i < s.Length || i < napok.Length; i++)
+            for (int i = 0; i < s.Length && i < napok.Length; i++) // vegigmegyek a tombokon
             {
-                seged.Add(napok[i], s[i]);
+                seged.Add(napok[i], s[i]); 
             }
 
             NyitvaT = seged;
         }
 
-        public override string ToString()
+        public override string ToString() //override
         {
             string s = "";
-            foreach (var i in NyitvaT)
+            foreach (var i in NyitvaT) //kiirja az osszeset
             {
-                s += i.Key + ": " + i.Value + Environment.NewLine;
+                s += i.Key + ": " + i.Value + Environment.NewLine; 
             }
             return s;
         }

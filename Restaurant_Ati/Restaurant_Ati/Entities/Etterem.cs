@@ -17,12 +17,12 @@ namespace Restaurant_Ati
         private string Feedback { get; set; }
 
         private Nyitvatartas Ny { get; set; }
-
+        //lista menu tipusu elemek lesznek benne
         private List<Menu> Menus { get; set; }
 
-        public Etterem(string id, string name, string address, string type, string phoneno, string feedback, string nyitvatartas)
+        public Etterem(string id, string name, string address, string type, string phoneno, string feedback, string nyitvatartas) 
         {
-            Id = id;
+            Id = id; 
             Name = name;
             Address = address;
             Type = type;
@@ -34,7 +34,7 @@ namespace Restaurant_Ati
         }
         public string getId()
         {
-            return Id;
+            return Id; 
         }
         public string getFeedback()
         {
@@ -48,7 +48,7 @@ namespace Restaurant_Ati
         {
             return Ny;
         }
-        public Menu getMenuByName(string name)
+        public Menu getMenuByName(string name) // vegigmegyek az osszes menun, A vagy B menüt kérem le
         {
             foreach (Menu menu in Menus)
             {
@@ -57,9 +57,9 @@ namespace Restaurant_Ati
                     return menu;
                 }
             }
-            return null;
+            return null; 
         }
-        private List<Menu> readMenus()
+        private List<Menu> readMenus() //XmlReader; XML beolvasása
         {
 
             List<Menu> m = new List<Menu>();
@@ -67,10 +67,10 @@ namespace Restaurant_Ati
             reader.ReadToFollowing("menu");
             do
             {
-                reader.MoveToAttribute("name");
+                reader.MoveToAttribute("name"); //attribute 
                 string name = reader.Value;
-                reader.ReadToFollowing("leves");
-                string leves = reader.ReadElementContentAsString();
+                reader.ReadToFollowing("leves"); //tagek
+                string leves = reader.ReadElementContentAsString(); 
                 reader.ReadToFollowing("foetel");
                 string foetel = reader.ReadElementContentAsString();
                 reader.ReadToFollowing("desszert");
@@ -80,7 +80,7 @@ namespace Restaurant_Ati
                 reader.ReadToFollowing("kaloria");
                 string kaloria = reader.ReadElementContentAsString();
 
-                m.Add(new Menu(name, leves, foetel, desszert, ar, kaloria));
+                m.Add(new Menu(name, leves, foetel, desszert, ar, kaloria)); 
             }
             while (reader.ReadToFollowing("menu"));
             return m;

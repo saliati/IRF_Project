@@ -48,7 +48,7 @@ namespace Restaurant_Ati
         {
             return Ar;
         }
-        public override string ToString()
+        public override string ToString() //toString() metodust felulirom az override; CSV-be irashoz kell majd
         {
             return Name + " menu;" + Leves + ";" + Foetel + ";" + Desszert + ";" + Ar + ";" + Kaloria;
         }

@@ -31,27 +31,27 @@ namespace Restaurant_Ati
             textBox6.TextAlign = HorizontalAlignment.Center;
             textBox7.TextAlign = HorizontalAlignment.Center;
 
-            Etterem = getAllEtterem("restaurants.xml");
+            Etterem = getAllEtterem("restaurants.xml"); // függvény getAllEtterem
 
             this.Controls.Remove(this.button3);
             this.Controls.Remove(this.button2);
 
-            string[] ettermek = new string[Etterem.Count()];
+            string[] ettermek = new string[Etterem.Count()]; //csinalok egy tömböt, megszámolom, hogy hány elemu a lista, annyi tömb lesz
 
-            for (int i = 0; i < Etterem.Count; i++)
+            for (int i = 0; i < Etterem.Count; i++) //tömböt feltöltöm az ettermek neveivel
             {
                 ettermek[i] = Etterem[i].getName();
             }
-            this.comboBox1.Items.AddRange(ettermek);
+            this.comboBox1.Items.AddRange(ettermek);//AddRange-tömb; Add-stringet pl.
             this.comboBox1.Size = new Size(216, 26);
 
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBox1); 
         }
 
         private List<Etterem> getAllEtterem(string file)
         {
             List<Etterem> e = new List<Etterem>();
-            XmlReader reader = XmlReader.Create("restaurants.xml");
+            XmlReader reader = XmlReader.Create("restaurants.xml"); //xml -bol beolvasas
             reader.ReadToFollowing("restaurant");
             do
             {
@@ -71,14 +71,15 @@ namespace Restaurant_Ati
                 string nyitvatartas = reader.ReadElementContentAsString();
 
 
-                e.Add(new Etterem(id, name, address, cuisine, phoneno, feedback, nyitvatartas));
+                e.Add(new Etterem(id, name, address, cuisine, phoneno, feedback, nyitvatartas)); 
             }
 
-            while (reader.ReadToFollowing("restaurant"));
+            while (reader.ReadToFollowing("restaurant")); // ha nincs több restaurant akkor kilep
             return e;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        //Adott étterem CSV-be kiirása
+        private void button2_Click(object sender, EventArgs e) 
         {
             SaveFileDialog sfd = new SaveFileDialog();
 
@@ -96,7 +97,7 @@ namespace Restaurant_Ati
                 {
                     if (i.getName() == this.comboBox1.SelectedItem.ToString())
                     {
-                        et = i;
+                        et = i; //et = null, ha megegyzezik, akkor atveszi az obj erteket
                     }
                 }
                 sw.WriteLine("Feedback:" + et.getFeedback());
@@ -106,7 +107,9 @@ namespace Restaurant_Ati
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+
+        //ha éttermet váltunk a comboBox-ban akkor ezzel a kodsorral valtoztatjuk meg h mit irjon ki a textboxokba
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //mikor kivalasztasz egy ettermet, akkor fog ez a funkcio lefutni
         {
             Etterem et = null;
             foreach (Etterem i in Etterem)
@@ -116,12 +119,13 @@ namespace Restaurant_Ati
                     et = i;
                 }
             }
+            //"A" menü
             this.textBox2.Text = et.getMenuByName("A").getLeves();
             this.textBox4.Text = et.getMenuByName("A").getFoetel();
             this.textBox6.Text = et.getMenuByName("A").getDesszert();
             this.label11.Text = et.getMenuByName("A").getKaloria();
             this.label12.Text = et.getMenuByName("A").getAr();
-
+            //"B" menü
             this.textBox3.Text = et.getMenuByName("B").getLeves();
             this.textBox5.Text = et.getMenuByName("B").getFoetel();
             this.textBox7.Text = et.getMenuByName("B").getDesszert();
@@ -130,11 +134,13 @@ namespace Restaurant_Ati
 
             this.label15.Text = "Értékelés: " + et.getFeedback() + "/5";
             this.textBox1.Text = et.getNyitvatartas().ToString();
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button3); //visszatesszuk a ket gombot
             this.Controls.Add(this.button2);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        //összes étterem kiirasa csv-be
+        private void button1_Click(object sender, EventArgs e) 
         {
             SaveFileDialog sfd = new SaveFileDialog();
 
@@ -158,9 +164,12 @@ namespace Restaurant_Ati
 
             }
         }
+
+
         //Aktualis etterem törlése a listából
         private void button3_Click(object sender, EventArgs e)
         {
+            //p elemnek a getName-jet keresem ==> lekérem az össszes nevet, amelyik etterem megegyezik a legorduloben kiválasztottal, azokat kitörli
             Etterem.RemoveAll(p => p.getName() == this.comboBox1.SelectedItem.ToString());
             string[] ettermek = new string[Etterem.Count()];
 
@@ -183,10 +192,10 @@ namespace Restaurant_Ati
             this.label15.Text = "";
             this.textBox1.Text = "";
             this.comboBox1.Text = "";
-            this.comboBox1.Items.Clear();
-            this.comboBox1.Items.AddRange(ettermek);
+            this.comboBox1.Items.Clear(); //kitörlök mindent
+            this.comboBox1.Items.AddRange(ettermek); //hozzáadom a megmaradtakat
             this.Controls.Add(this.comboBox1);
-            this.Controls.Remove(this.button2);
+            this.Controls.Remove(this.button2); //csv-s, meg a remove-os gombot addig kiveszem
             this.Controls.Remove(this.button3);
         }
 
