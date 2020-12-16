@@ -12,6 +12,7 @@ using System.Xml;
 
 namespace Restaurant_Ati
 {
+    
     public partial class Form1 : Form
     {
         private List<Etterem> Etterem;
@@ -20,7 +21,9 @@ namespace Restaurant_Ati
         {
             InitializeComponent();
 
-            //pictureBox1.Width = pictureBox1.Image.Width;
+            pictureBox1.Image = Image.FromFile("Restaurant-icon.png");
+            pictureBox1.Width = pictureBox1.Image.Width;
+
             textBox2.TextAlign = HorizontalAlignment.Center;
             textBox3.TextAlign = HorizontalAlignment.Center;
             textBox4.TextAlign = HorizontalAlignment.Center;

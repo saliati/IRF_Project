@@ -84,9 +84,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(55, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(55, 42);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 102);
+            this.pictureBox1.Size = new System.Drawing.Size(151, 139);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -148,7 +148,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label7.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(250, 205);
+            this.label7.Location = new System.Drawing.Point(268, 205);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 18);
             this.label7.TabIndex = 8;
@@ -193,9 +193,8 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(146, 394);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 16);
+            this.label11.Size = new System.Drawing.Size(0, 16);
             this.label11.TabIndex = 12;
-            this.label11.Text = "label11";
             // 
             // label12
             // 
@@ -203,30 +202,27 @@
             this.label12.Font = new System.Drawing.Font("Tahoma", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label12.Location = new System.Drawing.Point(146, 441);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 16);
+            this.label12.Size = new System.Drawing.Size(0, 16);
             this.label12.TabIndex = 13;
-            this.label12.Text = "label12";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(267, 394);
+            this.label13.Location = new System.Drawing.Point(281, 394);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 16);
+            this.label13.Size = new System.Drawing.Size(0, 16);
             this.label13.TabIndex = 14;
-            this.label13.Text = "label13";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Tahoma", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label14.Location = new System.Drawing.Point(267, 441);
+            this.label14.Location = new System.Drawing.Point(281, 441);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(54, 16);
+            this.label14.Size = new System.Drawing.Size(0, 16);
             this.label14.TabIndex = 15;
-            this.label14.Text = "label14";
             // 
             // textBox2
             // 
@@ -241,7 +237,7 @@
             this.textBox3.Location = new System.Drawing.Point(239, 240);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(119, 20);
+            this.textBox3.Size = new System.Drawing.Size(131, 20);
             this.textBox3.TabIndex = 17;
             // 
             // textBox4
@@ -259,7 +255,7 @@
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(119, 44);
+            this.textBox5.Size = new System.Drawing.Size(131, 44);
             this.textBox5.TabIndex = 19;
             // 
             // textBox6
@@ -275,7 +271,7 @@
             this.textBox7.Location = new System.Drawing.Point(239, 339);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(119, 20);
+            this.textBox7.Size = new System.Drawing.Size(131, 20);
             this.textBox7.TabIndex = 21;
             // 
             // label15
@@ -378,6 +374,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

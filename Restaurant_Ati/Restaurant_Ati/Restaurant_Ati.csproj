@@ -114,6 +114,9 @@
     <Content Include="9.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Restaurant-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="restaurants.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
