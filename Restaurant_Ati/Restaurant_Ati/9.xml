@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lunch>
+  <menu name="A">
+    <leves>Paradicsomleves</leves>
+    <foetel>Sertéssült Svéd gombaraguval, párolt rizs</foetel>
+    <desszert>Sajttorta</desszert>
+    <ar>1900 Ft</ar>
+    <kaloria>1500 kcal</kaloria>
+  </menu>
+  <menu name="B">
+    <leves>Lebbencsleves</leves>
+    <foetel>Rántott csirkemell újburgonyával</foetel>
+    <desszert>Hortobágyi óriáspalacsinta</desszert>
+    <ar>1600 Ft</ar>
+    <kaloria>2300 kcal</kaloria>
+  </menu>
+ </lunch>

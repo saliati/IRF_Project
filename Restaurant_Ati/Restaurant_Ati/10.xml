@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lunch>
+  <menu name="A">
+    <leves> Bableves csipetkével </leves>
+    <foetel>Marhapörkölt</foetel>
+    <desszert>Nincs</desszert>
+    <ar>1200 Ft</ar>
+    <kaloria>1350 kcal</kaloria>
+  </menu>
+  <menu name="B">
+    <leves>Húsleves gazdagon</leves>
+    <foetel>Gordon csirkemell, rizibizi, saláta, sütemény</foetel>
+    <desszert>Hatlapos</desszert>
+    <ar>1800 Ft</ar>
+    <kaloria>1900 kcal</kaloria>
+  </menu>
+ </lunch>

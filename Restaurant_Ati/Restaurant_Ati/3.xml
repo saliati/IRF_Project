@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lunch>
+  <menu name="A">
+    <leves>grízgaluskaleves</leves>
+    <foetel>Rántott sertésborda rízzsel</foetel>
+    <desszert>Feketeerdő torta</desszert>
+    <ar>1450 Ft</ar>
+    <kaloria>1800 kcal</kaloria>
+  </menu>
+  <menu name="B">
+    <leves>Húsleves gazdagon</leves>
+    <foetel>Rántott borda újburgonyával</foetel>
+    <desszert>császármorzsa</desszert>
+    <ar>1600 Ft</ar>
+    <kaloria>2300 kcal</kaloria>
+  </menu>
+ </lunch>

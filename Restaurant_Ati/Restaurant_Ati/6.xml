@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lunch>
+  <menu name="A">
+    <leves> Tejfölös burgonyaleves</leves>
+    <foetel>Marhapörkölt</foetel>
+    <desszert>Sajttorta</desszert>
+    <ar>1800 Ft</ar>
+    <kaloria>1500 kcal</kaloria>
+  </menu>
+  <menu name="B">
+    <leves>Húsleves gazdagon</leves>
+    <foetel>Milánói csirkemell</foetel>
+    <desszert>Torta</desszert>
+    <ar>1700 Ft</ar>
+    <kaloria>1650 kcal</kaloria>
+  </menu>
+ </lunch>

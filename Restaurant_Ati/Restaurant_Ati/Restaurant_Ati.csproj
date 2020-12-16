@@ -76,5 +76,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.xml" />
+    <Content Include="10.xml" />
+    <Content Include="2.xml" />
+    <Content Include="3.xml" />
+    <Content Include="4.xml" />
+    <Content Include="5.xml" />
+    <Content Include="6.xml" />
+    <Content Include="7.xml" />
+    <Content Include="8.xml" />
+    <Content Include="9.xml" />
+    <Content Include="restaurants.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
