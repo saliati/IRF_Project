@@ -4,14 +4,14 @@
     <leves>Tejfölös burgonyaleves</leves>
     <foetel>Paprikás krumpli, sült csirkemell</foetel>
     <desszert>Sajttorta</desszert>
-    <ar>1500</ar>
-    <kaloria>1200</kaloria>
+    <ar>1500 Ft</ar>
+    <kaloria>1200 kcal</kaloria>
   </menu>
   <menu name="B">
     <leves>Húsleves főtt hússal</leves>
     <foetel>Fűszeres sült csirkecomb, párolt rizs, saláta</foetel>
     <desszert>Hortobágyi óriáspalacsinta</desszert>
-    <ar>1400</ar>
-    <kaloria>1400</kaloria>
+    <ar>1400 Ft</ar>
+    <kaloria>1400 kcal</kaloria>
   </menu>
  </lunch>

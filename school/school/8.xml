@@ -4,14 +4,14 @@
     <leves>Csontleves tésztával </leves>
     <foetel>Kelkáposzta főzelék, virslivel</foetel>
     <desszert>nincs</desszert>
-    <ar>1400</ar>
-    <kaloria>1500</kaloria>
+    <ar>1400 Ft</ar>
+    <kaloria>1500 kcal</kaloria>
   </menu>
   <menu name="B">
     <leves>Bakonyi betyárleves</leves>
     <foetel>Sült csirkemell tejszínes almamártással, párolt rizs</foetel>
     <desszert>Hortobágyi óriáspalacsinta</desszert>
-    <ar>1800</ar>
-    <kaloria>2300</kaloria>
+    <ar>1800 Ft</ar>
+    <kaloria>2300 kcal</kaloria>
   </menu>
  </lunch>
