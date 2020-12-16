@@ -9,20 +9,19 @@ namespace school
 {
     class Etterem
     {
-        //ez igyjó? Properties?
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public string Type { get; set; }
-        public string PhoneNo { get; set; }
-        public string Feedback { get; set; }
+        private string Id { get; set; }
+        private string Name { get; set; }
+        private string Address { get; set; }
+        private string Type { get; set; }
+        private string PhoneNo { get; set; }
+        private string Feedback { get; set; }
 
-        public string getId()
-        {
-            return Id;
-        }
+        private Nyitvatartas Ny { get; set; }
 
-        public Etterem(string id, string name, string address, string type, string phoneno, string feedback)
+        private List<Menu> Menus { get; set; }
+
+
+        public Etterem(string id, string name, string address, string type, string phoneno, string feedback, string nyitvatartas)
         {
             Id = id;
             Name = name;
@@ -30,6 +29,9 @@ namespace school
             Type = type;
             PhoneNo = phoneno;
             Feedback = feedback;
+            Menus = readMenus();
+            Ny = new Nyitvatartas(nyitvatartas);
+
         }
 
         public Stars getStar()

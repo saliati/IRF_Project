@@ -23,6 +23,7 @@ namespace school
             List<Etterem> e = getAllEtterem("restaurants.xml");
             List<Menu> m = getMenu("1.xml"); //problémás
             EtteremXML();
+            
         }
 
         private List<Etterem> getMenu(string id)
@@ -51,6 +52,7 @@ namespace school
             while (reader.ReadToFollowing("menu"));
             return m;
         }
+        
 
         private List<Etterem> getAllEtterem(string file) 
         {
@@ -114,7 +116,7 @@ namespace school
             XmlDocument xml = new XmlDocument();
             using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8)) 
             {
-                sw.Write();
+                //sw.Write();
             }
         }
     }
