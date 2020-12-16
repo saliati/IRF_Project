@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant_Ati.Entities
+namespace Restaurant_Ati
 {
     class Menu
     {

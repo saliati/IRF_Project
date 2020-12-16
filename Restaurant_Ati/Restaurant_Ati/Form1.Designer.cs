@@ -97,6 +97,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(177, 21);
             this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -282,18 +283,17 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Yellow;
             this.label15.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.Location = new System.Drawing.Point(529, 205);
+            this.label15.Location = new System.Drawing.Point(513, 205);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(76, 18);
+            this.label15.Size = new System.Drawing.Size(0, 18);
             this.label15.TabIndex = 22;
-            this.label15.Text = "feedback";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(499, 234);
+            this.textBox1.Location = new System.Drawing.Point(497, 245);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 173);
+            this.textBox1.Size = new System.Drawing.Size(147, 110);
             this.textBox1.TabIndex = 23;
             // 
             // button1
@@ -306,6 +306,7 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "Export All Restaurant To CSV";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -317,6 +318,7 @@
             this.button2.TabIndex = 25;
             this.button2.Text = "Export Current Restaurant To CSV";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -328,6 +330,7 @@
             this.button3.TabIndex = 26;
             this.button3.Text = "Remove Restaurant";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -339,6 +342,7 @@
             this.button4.TabIndex = 27;
             this.button4.Text = "EXIT";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
