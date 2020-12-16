@@ -24,5 +24,34 @@ namespace school.Entities
             Ar = ar;
             Kaloria = kaloria;
         }
+
+        public string getName()
+        {
+            return Name;
+        }
+        public string getLeves()
+        {
+            return Leves;
+        }
+        public string getFoetel()
+        {
+            return Foetel;
+        }
+        public string getDesszert()
+        {
+            return Desszert;
+        }
+        public string getKaloria()
+        {
+            return Kaloria;
+        }
+        public string getAr()
+        {
+            return Ar;
+        }
+        public override string ToString()
+        {
+            return Name + " menu;" + Leves + ";" + Foetel + ";" + Desszert + ";" + Ar + ";" + Kaloria;
+        }
     }
 }
