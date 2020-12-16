@@ -65,7 +65,7 @@ namespace school
 
         private List<Menu> readMenus()
         {
-            //?
+            
             List<Menu> m = new List<Menu>();
             XmlReader reader = XmlReader.Create(Id + ".xml");
             reader.ReadToFollowing("menu");

@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Etterem.cs" />
-    <Compile Include="Entities\Feedback.cs" />
     <Compile Include="Entities\Menu.cs" />
     <Compile Include="Entities\Nyitvatartas.cs" />
     <Compile Include="Entities\Stars.cs" />

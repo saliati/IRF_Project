@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Cars.Properties
+namespace Restaurant_Ati.Properties
 {
 
 
